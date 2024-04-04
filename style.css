@@ -1,0 +1,82 @@
+body {
+    background-color: aqua;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Le style appliqué à l'interface de l'application*/
+#interface_utisateur 
+{
+    width: 2024PX;
+    height: 2024px; 
+    display: grid;
+    grid-template-rows: 1fr 2.5fr;
+    /* background-color: brown; */
+    
+
+}
+/* ------------------------------------------------------------ */
+
+/*Le style appliqué à l'en tête de l'application*/
+#en_tête
+{
+    background: orchid;
+    display: grid;
+    grid-template-rows: 1fr 2.5fr;
+
+}
+#nom_appli
+{
+    
+
+}
+#tire_appli 
+{
+    background-color: chocolate;
+
+}
+#ajout_tâche 
+{
+    display: grid;
+    grid-template-columns: 4fr repeat(5, 1fr);
+    
+    
+
+}
+#item1 {
+    background: yellow;
+
+}
+#item2 {
+    background: rgb(175, 175, 136);
+
+}
+#item3 {
+    background: rgb(191, 69, 228);
+
+}
+#item4 {
+    background: rgb(28, 196, 64);
+
+}
+#item5 {
+    background: rgb(207, 9, 9);
+
+}
+#item6 {
+    background: rgb(4, 215, 243);
+
+}
+
+/* ------------------------------------------------------------ */
+
+
+/*Le style appliqué au corp de l'application*/
+#corp_apli 
+{
+    background: white;
+
+}
