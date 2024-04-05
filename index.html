@@ -9,62 +9,54 @@
 </head>
 <body>
 
-       <!--L'interface utilisateur de l'application-->
-       <div id="interface_utisateur">
-            <!--En tête de l'application-->
-            <div id="en_tête">
+       
+            <section id="en_tête">
                 <!--Le nom de l'application-->
-                <div id="tire_appli">
-                    <h1 id="nom_appli">TACHE TOOL</h1>
-                </div>
+                    <h1 id="titre">TACHE TOOL</h1>
+            <!-- </section> -->
+          
                 <!--Section d'ajout d'une tâche-->
                 <div id="ajout_tâche">
                     <!--Champs de saisie de la tâche-->
-                    <div id="item1">
-                        <form action="">
-                            <label for="item1"></label>
-                            <input type="text" id="text1">
-                        </form>
-                    </div>
-                    <!--Champs de l'icone de la date-->
-                    <div id="item2">
-                        <img src="/Images/calendrier.png" alt="icone d'un calendrier">
+                    <div id="saisie_tache">
+                        <textarea name="" id="text_tache" cols="30" rows="20"></textarea>
                     </div>
                     <!--Champs de saisie de la date-->
-                    <div id="item3">
+                    <div id="date_tache">
+                        <img src="/Images/calendrier.png" id="icone_date" alt="icone d'un calendrier">
                         <form action="">
                             <label for="item3"></label>
-                            <input type="date" id="text3">
+                            <input type="date" id="input-date">
                         </form>
                     </div>
-                    <!--Champs de l'icone de la priorité-->
-                    <div id="item4">
-                        <img src="/Images/priorite.png" alt="icone d'un calendrier">
-                    </div>
                     <!--Champs de saisie de la priorité-->
-                    <div id="item5">
+                    <div id="priorite">
+                        <img src="/Images/priorite.png" id="icone_priorité" alt="icone d'un calendrier">
                         <form action="">
-                            <label for="item5"></label>
-                            <input type="number" id="text5">
+                            <select name="" id="numero_prioriter">
+                                <option value="Elevé">Elevé</option>
+                                <option value="Moyen">Moyen</option>
+                                <option value="Faible">Faible</option>
+                            </select>
                         </form>
                     </div>
                     <!--Champs de bouton d'ajout-->
-                    <div id="item6">
-                        <form action="">
-                            <label for="item3"></label>
-                            <input type="button" id="text6">
-                        </form>
+                    <div id="bouton">
+                       <button type="submit" id="button_ajouter">Ajouter</button>
                     </div>
 
                 </div>
-            </div>
-            <!--Corp de l'application-->
-            <div id="corp_apli">
+              
+            </section>
+            <section>
+                  <!-- Corps de la tache liste -->
+                  <div id="corps_tache">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aliquam perspiciatis explicabo alias placeat, vitae debitis excepturi, blanditiis velit ex eos. Doloremque alias soluta reprehenderit quaerat nam ab, pariatur quasi.</p>
 
-            </div>
-
-       </div>
-    
+                </div>
+            </section>
+           
+       <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
