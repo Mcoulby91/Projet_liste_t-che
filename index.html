@@ -20,21 +20,21 @@
                     <!--Champs de saisie de la tâche-->
                     <div id="saisie_tache">
                         <label for="text_tache"></label>
-                        <textarea name="text_tache" id="text_tache" cols="30" rows="20"></textarea>
+                        <textarea name="text_tache" id="text_tache" title="numero_prioriter" cols="30" rows="20" placeholder="Siasissez votre taches" ></textarea>
                     </div>
                     <!--Champs de saisie de la date-->
                     <div id="date_tache">
                         <img src="Images/calendrier.png" id="icone_date" alt="icone d'un calendrier">
                         <form action="">
                             <label for="input-date"></label>
-                            <input type="date" id="input-date">
+                            <input type="date" id="input-date" title="numero_prioriter">
                         </form>
                     </div>
                     <!--Champs de saisie de la priorité-->
                     <div id="priorite">
                         <img src="Images/priorite.png" id="icone_priorité" alt="icone d'un calendrier">
                         <form action="">
-                            <select name="" id="numero_prioriter">
+                            <select name="numero_prioriter" id="numero_prioriter" title="numero_prioriter">
                                 <option value="Elevé">Elevé</option>
                                 <option value="Moyen">Moyen</option>
                                 <option value="Faible">Faible</option>
@@ -54,7 +54,7 @@
                  <ul id="ul"></ul>
             </section>
            
-       <script src="script.js"></script>
+       <script src="script.js" defer></script>
 </body>
 
 </html>
