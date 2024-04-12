@@ -8,16 +8,16 @@ body{
     
 }
 :root{
-    --couleur_orange : rgba(241, 167, 22, 1);
+    --couleur_orange : rgba(240, 226, 104, 0.781);
 }
 #corp_tache{
     /* background-color: white; */
-    width: 1250px;
+    width: 800px;
     /* height: 500px; */
 }
 #en_tête{
-    background-color: rgba(235, 23, 201, 0.97);
-    width: 1300px;
+    background-color: rgba(95, 82, 93, 0.97);
+    width: 800px;
 }
 #titre{
     margin-left: 70px;
@@ -39,6 +39,7 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    transition: 0.8s;
     
 }
 
@@ -46,8 +47,9 @@ body{
     margin-top: 30px;
     background-color: var(--couleur_orange);
     border-radius: 50px;
-    width: 1200px;
+    width: 700px;
     height: 50px;
+    transition: 0.8s;
     
     
 
@@ -70,74 +72,108 @@ li span {
     
 
 }
-#input-date{
-
-    width: 150px;
-    height: 35px;
-    border-radius: 50px;
-    border-color:var(--couleur_orange);
-    border-style:solid;
-    font-size: 120%;
+.date_tache{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
 }
-#numero_prioriter
-{
-    width: 150px;
+#icone_date{
+    width:30px ;
+
+}
+#input-date{
+
+    width: 100px;
     height: 35px;
     border-radius: 50px;
-    border-color:var(--couleur_orange);
-    border-style:solid;
-    font-size: 120%;
+    font-size: 100%;
+
+}
+
+#numero_prioriter
+{
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    font-size: 100%;
    
+}
+.priorite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#icone_priorité{
+    width:30px ;
 }
 #button_ajouter
 {
-    width: 200px;
+    width: 150px;
     height: 70px;
     border-radius: 50px;
     margin-top: 10px;
-    background-color:var(--couleur_orange);
+    /* background-color:var(--couleur_orange); */
     font-size: 150%;
+    text-decoration: none;
+    transition: 0.5s;
 }
+#button_ajouter:hover{
+    background: var(--couleur_orange);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--couleur_orange);
+}
+
 #button_statut{
     border-radius: 20px;
     margin-left: 10px;
 }
-ul li span:nth-child(2){
+#text_tache_liste{
     
     background-color: rgba(255, 255, 255, 0.97);
     border-radius: 50px;
     height: 30px;
     width: 350px;
     text-align: center;
-    padding-top: 14px;
     
  }
+ .deleteBtn {
+    border-radius: 90px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    font-size: 16px;
+    height: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.deleteBtn:hover{
+    background: red;
+    letter-spacing: 0.10em;
+    box-shadow: 0 0 35px red;
+}
  ul li span:nth-child(3){
     
     background-color: rgba(255, 255, 255, 0.97);
     border-radius: 50px;
-    height: 30px;
+    height: 20px;
     width: 80px;
     text-align: center;
-    padding-top: 14px;
+    
  }
  ul li span:nth-child(4){
     
     background-color: rgba(255, 255, 255, 0.97);
     border-radius: 50px;
-    height: 30px;
+    height: 20px;
     width: 60px;
     text-align: center;
-    padding-top: 14px;
- }
- #checkBouton{
     
-    width: 30px;
-    height: 20px;
-    text-decoration: line-through;
  }
- @media (max-width: 950px){
+ 
+ @media (max-width: 800px){
 
     #en_tête{
         width: 100%;
@@ -152,6 +188,7 @@ ul li span:nth-child(2){
    #corp_tache{
     width: 100%;
    }
+
    .listTache{
     width: 100%;
    }
@@ -165,11 +202,11 @@ ul li span:nth-child(2){
     text-align: center;
     margin-right: 15%;
    }
-   ul li span:nth-child(2){
+   #text_tache_liste{
     width: 80%;
    }
  }
- @media (max-width: 700px){
+ @media (max-width: 600px){
 
     #en_tête{
         width: 100%;
@@ -203,7 +240,77 @@ ul li span:nth-child(2){
    ul li span:nth-child(1){
     width: 20px;
    }
-   ul li span:nth-child(2){
+   #text_tache_liste{
     width: 90px;
    }
+   
+#button_ajouter:hover{
+   background: var(--couleur_orange);
+   letter-spacing: 0.25em;
+   box-shadow: 0 0 35px var(--couleur_orange);
+}
+ }
+ @media (max-width: 460px){
+
+    #en_tête{
+        width: 100%;
+        
+    }
+   #ajout_tâche {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   #button_statut{
+    width: 100%;
+}
+   #corp_tache{
+    width: 400px;
+   }
+   .listTache{
+    width: 100%;
+   }
+   #ul li{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: -19px;
+   }
+   li span{
+    font-size: 0.6em;
+   } 
+   #titre{
+    text-align: center;
+    margin-right: 15%;
+   }
+   ul li span:nth-child(1){
+    width: 20px;
+   }
+   #text_tache_liste{
+    width: 300px;
+   }
+   #button_ajouter{
+    text-decoration: none;
+    transition: 0.5s;
+   }
+   #button_ajouter:hover{
+    background: var(--couleur_orange);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--couleur_orange);
+ }
+ #button_statut{
+    border-radius: 20px;
+    width: 70px;
+    margin-left: -20px;
+    
+}
+.deleteBtn{
+    text-decoration: none;
+    transition: 0.5s;
+    color: red;
+
+}
  }
