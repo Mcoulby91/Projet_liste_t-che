@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
             <span>${task.text}</span>
             <span>${task.date}</span>
             <span>${task.priority}</span>
-            <img src="/Images/supprimer.png" width=34px class="deleteBtn">
+            <img src="Projet_liste_tache\Images\supprimer.png" width=34px class="deleteBtn">
         `;
         ulContent.appendChild(listLi);
     }
